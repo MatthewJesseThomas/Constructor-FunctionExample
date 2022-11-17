@@ -14,6 +14,7 @@ class Details {
         this.email = email;
         this.coding = () => {
             console.log("Busy Coding SpyWare");
+            
         };
     }
     display() {
