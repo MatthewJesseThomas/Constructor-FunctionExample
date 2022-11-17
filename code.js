@@ -31,8 +31,8 @@ Make use of the prototype to add a new property.
 // •A factory function can be defined as a function that creates an object and returns it. It is similar to constructor functions/class functions. The factory function is a very useful tool in JavaScript since it returns the object of any class directly.
 // #Eg.
 let john = {
-    firstName: 'John',
-    lastName: 'Doe',
+    firstName: 'Zenku',
+    lastName: 'Dono',
     getFullName() {
         return this.firstName + ' ' + this.lastName;
     }
@@ -50,7 +50,7 @@ for any existing object properties*/
 class Animal{
   
   constructor (name, height, weight){
-    console.log("created animal named", name)
+    console.log("created the Kaiju named", name)
   }
   nameLength() {
     return name.length;
@@ -58,10 +58,16 @@ class Animal{
   }
   
 }
- var dog = new Animal("Fido", 25, 90);
- var fish = new Animal("Goldie", 2, .02);
+ var dog = new Animal("Daimajin", 25, 90);
+ var fish = new Animal("Gamera", 2, .02);
 
 	console.log(dog.nameLength);
 // What is the Difference Between Factory-Function and Constructor-Functions~
-
+class Fuck {
+  who() {
+    return 'Fuck-You'
+  }
+}
+let fuck = new Fuck()
+console.log(fuck.who());
 // •If a Factory-Function can be defined as a function that creates an object and returns it. It is similar to constructor functions/class functions. The factory function is a very useful tool in JavaScript since it returns the object of any class directly, then the Constructor-Function is a function that creates an instance of a class which is typically called an “object”. In JavaScript, a constructor gets called when you declare an object using the new keyword. The purpose of a constructor is to create an object and set values if there are any object properties present.
